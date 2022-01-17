@@ -21,8 +21,13 @@ Write a program, `list-names`, that reads a SimpleFASTQ file and outputs all the
 
 You can test your program using `./test-list-names.sh`.
 
+The script `list-names` in the root of this repository calls Python with the file `src/list-names.py`, so that is a good place to start your programming.
+
+
 ## Exercise
 
 Write a program, `list-seqs`, that reads a SimpleFASTQ file and outputs all the read sequences, one sequence per line.
 
 You can test your program using `./test-list-seqs.sh`.
+
+The script `list-seqs` in the root of this repository calls Python with the file `src/list-seqs.py`, so that is a good place to start your programming.
