@@ -1,4 +1,5 @@
 import argparse
+import fastq
 
 
 def main():
@@ -9,8 +10,8 @@ def main():
         type=argparse.FileType('r')
     )
     args = argparser.parse_args()
-
-    print(f"Now I need to process the records in {args.fastq}")
+    for name, _ in fastq.extract_reads(args.fastq):
+        print(name)
 
 
 if __name__ == '__main__':
